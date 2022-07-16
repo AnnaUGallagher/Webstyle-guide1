@@ -7,7 +7,12 @@
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
-  }
+    @media (min-width: $break-m){
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }}
+  
   
   .nav-link {
     text-align: center;
@@ -22,5 +27,5 @@
   
   .nav-link:hover {
     color: #fff;
-    background-color: #58e1c1;
+    background-color: $base;
   }
